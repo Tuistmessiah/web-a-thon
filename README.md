@@ -23,8 +23,10 @@ The container TableData handles the calls and connects to the components that re
 
 ## Installation & run
 
-Install dependencies, `npm run install` in `root` and in `/frontend`. The node server uses dummy data, so no database installation is required. To run the whole app, `npm run start`. Run node server with `npm run start:server:dev` (dev) or `npm run start:server` and the frontend with `npm run start:react`.
+Install dependencies, `npm install` in `root` and in `/frontend`. The node server uses dummy data, so no database installation is required.
+
+From the `root`, run the whole app, `npm run start` (The dev dependency `npm-run-all` is needed for this operation). Run node server with `npm run start:server:dev` (dev) or `npm run start:server` and the frontend with `npm run start:react`. By default, the node server runs on `http://localhost:5000/` and the react app on `http://localhost:3000/`.
 
 ## Configuration
 
-CORS can be disabled and enabled in the `.env` file, along with the allowed addresses and the local server PORT. By default, the node server runs on `http://localhost:5000/` and the react app on `http://localhost:3000/`.
+CORS can be disabled and enabled in the `.env` file, along with the allowed addresses and the local server PORT. A local `.env.local` can be used to override configurations.
