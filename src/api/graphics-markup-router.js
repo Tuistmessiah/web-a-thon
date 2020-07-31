@@ -14,7 +14,6 @@ router.get("/", (req, res) => {
 });
 
 router.get("/by-page", (req, res) => {
-  data.splice(10);
   const { page, rowsPerPage, orderedName, orientation, location } = req.query;
   let newArray = [...data];
 
