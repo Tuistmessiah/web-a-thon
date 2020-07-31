@@ -8,9 +8,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
-- Pagination, free text filtering of `location` and sorting by `in_frame` and `Out_frame`
-- A simple debounce was created to avoid too many requests while searching for a `location`
+- Pagination, free text filtering of `location` and sorting by `in_frame` and `out_frame`
+- Data is re-fetched everytime the user needs to change page, filter by location or sort data
+- A simple debounce was created in the frontend to avoid too many requests while searching for a `location`
 - Flexible API Handler can be used to connect to more APIs
+- Used Material UI for the components (wrapped as "Concept" components)
+- React Hooks/Functional Components
+
+### Frontend Structure
+
+The container TableData handles the calls and connects to the components that render data and contain the event listeners.
 
 # Start
 
